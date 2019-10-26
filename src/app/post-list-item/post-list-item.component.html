@@ -1,0 +1,8 @@
+
+<li class="list-group-item" [ngClass]="changeClass()">
+    <h4>{{postTitle}}</h4>
+    <p>{{postContent}}</p>
+    <span>{{postDate | date : 'short'}}</span>
+    <button type="button" class="btn btn-success" (click)="addLoveIts()">I love !!!</button> 
+    <button type="button" class="btn btn-danger" (click)="removeLoveIts()">Don't love !!!</button>
+</li>
